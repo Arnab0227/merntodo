@@ -7,7 +7,7 @@ const authMiddleware = require('./middleware/auth')
 const express = require('express')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken');
-const PORT = 6060
+const PORT = process.env.PORT || 6060
 const app = express()
 app.use(express.json())
 app.use(cors())
